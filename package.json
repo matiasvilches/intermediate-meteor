@@ -1,0 +1,15 @@
+{
+  "name": "intermediate",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.36",
+    "bcrypt": "^1.0.3",
+    "meteor-node-stubs": "^0.3.2",
+    "react": "^16.2.0",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "simpl-schema": "^1.4.2"
+  }
+}

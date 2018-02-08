@@ -1,0 +1,12 @@
+<template name="shoppingList">
+  <h1 class="page-title">Mi Lista de Compras</h1>
+  <ul class="shopping-list">
+    {{#each shoppingList}}
+      {{#each ingredients}}
+        <li>{{name}} - <span class="amount">{{amount}}</span></li>
+      {{/each}}
+    {{else}}
+      <li align="center">Por favor, agrega <a href="/recipe-book">recetas</a> a tu menú.</li>
+    {{/each}}
+  </ul>
+</template>

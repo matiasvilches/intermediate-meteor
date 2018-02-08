@@ -1,0 +1,17 @@
+<template name="recipes">
+  <h1 class="page-title">Mi Libro de Recetas</h1>
+  {{#if $.Session.get 'newRecipe'}}
+    {{> newRecipe}}
+  {{else}}
+    <button class="new-recipe">Nueva Receta</button>
+  {{/if}}
+  <section class="recipes">
+    {{#if Template.subscriptionsReady}}
+      {{#each recipes}}
+        {{> recipe}}
+      {{/each}}
+    {{else}}
+      <p>Cargando...</p>
+    {{/if}}
+  </section>
+</template>
